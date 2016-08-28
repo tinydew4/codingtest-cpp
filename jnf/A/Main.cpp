@@ -13,7 +13,8 @@
 
  int _tmain(int argc, _TCHAR* argv[])
 {
-	int weight['z'] = {0};
+	int weight['z'];
+	std::fill_n(weight, 'z', 0);
 	std::string input;
 	std::cin >> input;
 	for (auto& c: input) {

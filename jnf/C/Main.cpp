@@ -38,7 +38,7 @@ output eval(locations input, locations path = locations{std::make_tuple(0, 0)}, 
 	auto get_length = [](location a, location b) -> float {
 		return std::sqrt(std::pow(std::get<0>(a) - std::get<0>(b), 2) + std::pow(std::get<1>(a) - std::get<1>(b), 2));
 	};
-	output result(std::make_tuple(locations(), INT_MAX));
+	output result(std::make_tuple(locations(), std::numeric_limits<int>::max()));
 	for (int i = 0, a = input.size(); a-- > 0; i++) {
 		locations sub_input = input;
 		locations sub_path = path;
