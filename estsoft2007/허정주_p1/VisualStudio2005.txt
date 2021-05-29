@@ -1,0 +1,88 @@
+Build by Visual Studio 2005 (C++)
+
+Old algorithm, less results
+//---------------------------------------------------------------------------
+//#define OLD_MODE
+TTreeItem* TTreeList::GetNextMove(TTreeItem **Item)
+{
+	// 이동할 것 찾기, 이동할 지점이 있는 것 만
+#ifndef OLD_MODE
+	assert(Item);
+
+	TTreeItem *Result = NULL;
+	TTreeItem *Source = NULL;
+
+	if ((*Item)->HasTermChild())
+	{
+		// 단말 노드의 부모, 이동 가능한 단말 노드 반환
+		m_pTemp->Assign((*Item));
+		(*Item)->ChildNull();
+		__try
+		{
+			return GetTarget((*Item), (*Item)->GetParent(), m_pTemp);
+		}
+		__finally
+		{
+			(*Item)->Assign(m_pTemp);
+			m_pTemp->ChildNull();
+		}
+	}
+
+	if ((Source = (*Item)->GetRight())->HasChild() > 0 &&
+		(Result = GetNextMove(&Source)) != NULL)
+	{
+		(*Item) = Source;
+		return Result;
+	}
+
+	if ((Source = (*Item)->GetLeft())->HasChild() > 0 &&
+		(Result = GetNextMove(&Source)) != NULL)
+	{
+		(*Item) = Source;
+		return Result;
+	}
+
+	// 내 밑으로 아무도 못 움직여...
+	return NULL;
+#else
+// 왼쪽에서부터 확인
+	assert(Item);
+
+	TTreeItem *Result = NULL;
+	TTreeItem *Source = NULL;
+
+	if ((*Item)->HasTermChild())
+	{
+		// 단말 노드의 부모, 이동 가능한 단말 노드 반환
+		m_pTemp->Assign((*Item));
+		(*Item)->ChildNull();
+		__try
+		{
+			return GetTarget((*Item), (*Item)->GetParent(), m_pTemp);
+		}
+		__finally
+		{
+			(*Item)->Assign(m_pTemp);
+			m_pTemp->ChildNull();
+		}
+	}
+
+	if ((Source = (*Item)->GetLeft())->HasChild() > 0 &&
+		(Result = GetNextMove(&Source)) != NULL)
+	{
+		(*Item) = Source;
+		return Result;
+	}
+
+	if ((Source = (*Item)->GetRight())->HasChild() > 0 &&
+		(Result = GetNextMove(&Source)) != NULL)
+	{
+		(*Item) = Source;
+		return Result;
+	}
+
+	// 내 밑으로 아무도 못 움직여...
+	return NULL;
+#endif
+}
+//---------------------------------------------------------------------------

@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\p2.exe"/>
+    <OBJFILES value="..\obj\p2.obj ..\obj\p2msgsize.obj ..\obj\p2packet.obj ..\obj\p2common.obj 
+      ..\obj\p2objectlist.obj ..\obj\p2packetmanager.obj ..\obj\p2manager.obj"/>
+    <RESFILES value="p2.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dclusr.lib tinydew4C6.lib indy.lib bdertl.lib QR4RunC6.lib bcbie.lib 
+      bcbsmp.lib ColorControlsC6.lib XPMenu_BCB6.lib vclx.lib adortl.lib 
+      dbrtl.lib vcldb.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vcldb.lib dbrtl.lib adortl.lib vclx.lib XPMenu_BCB6.lib 
+      ColorControlsC6.lib bcbsmp.lib bcbie.lib QR4RunC6.lib bdertl.lib indy.lib 
+      tinydew4C6.lib dclusr.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi teedb.bpi 
+      tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi dsnapcrba.bpi 
+      dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi 
+      inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi bcbie.bpi websnap.bpi 
+      soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi bcb2kaxserver.bpi 
+      XPMenu_BCB6.bpi ColorControlsC6.bpi QR4RunC6.bpi qrpt.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="UNICODE"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="p2.bpf"/>
+    <INCLUDEPATH value="..\..;estsoft\p2;..\JpCommon;$(BCB)\quickrpt;$(BCB)\include;$(BCB)\include\vcl;&quot;d:\program files\borland\lib\colorcontrols10&quot;;&quot;D:\Program Files\Borland\Lib\xpmenu31&quot;;&quot;E:\arus 서류 가방\Components\Tinydew4&quot;"/>
+    <LIBPATH value="..\..;estsoft\p2;..\JpCommon;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\.. -Iestsoft\p2 -I..\JpCommon -I$(BCB)\quickrpt -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I&quot;d:\program files\borland\lib\colorcontrols10&quot; 
+      -I&quot;D:\Program Files\Borland\Lib\xpmenu31&quot; 
+      -I&quot;E:\arus 서류 가방\Components\Tinydew4&quot; -src_suffix cpp -DUNICODE -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -ff -X- -a8 -6 -b- -k- -vi -tWC 
+      -tWM- -c"/>
+    <PFLAGS value="-N2..\obj -N0..\obj -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-I..\obj -D&quot;&quot; -ap -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="p2.res" FORMNAME="" UNITNAME="p2.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="p2.bpf" FORMNAME="" UNITNAME="p2" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="p2.cpp" FORMNAME="" UNITNAME="p2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="p2msgsize.cpp" FORMNAME="" UNITNAME="p2msgsize" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="p2packet.cpp" FORMNAME="" UNITNAME="p2packet" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="p2common.cpp" FORMNAME="" UNITNAME="p2common" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="p2objectlist.cpp" FORMNAME="" UNITNAME="p2objectlist" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="p2packetmanager.cpp" FORMNAME="" UNITNAME="p2packetmanager" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="p2manager.cpp" FORMNAME="" UNITNAME="p2manager" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1042
+CodePage=949
+
+[Version Info Keys]
+CompanyName=tinydew4
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=p2.exe
+ProductName=p2
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=15
+Item0=..\..;estsoft\p2;..\JpCommon;$(BCB)\quickrpt;$(BCB)\include;$(BCB)\include\vcl;d:\program files\borland\lib\colorcontrols10;D:\Program Files\Borland\Lib\xpmenu31;E:\arus 서류 가방\Components\Tinydew4
+Item1=..\JpCommon;$(BCB)\quickrpt;$(BCB)\include;$(BCB)\include\vcl;d:\program files\borland\lib\colorcontrols10;D:\Program Files\Borland\Lib\xpmenu31;E:\arus 서류 가방\Components\Tinydew4
+Item2=..\JpCommon;$(BCB)\quickrpt;$(BCB)\include;$(BCB)\include\vcl;d:\program files\borland\lib\colorcontrols10;D:\Program Files\Borland\Lib\xpmenu31
+Item3=..\JpCommon;$(BCB)\quickrpt;$(BCB)\include;$(BCB)\include\vcl;d:\program files\borland\lib\colorcontrols10
+Item4=..\JpCommon;$(BCB)\quickrpt;$(BCB)\include;$(BCB)\include\vcl
+Item5=D:\Program Files\Borland\CBuilder6\Projects\temp;d:\program files\borland\thirdparty\tinydew4;$(BCB)\quickrpt;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Borland\ThirdParty\XPMenu 3.1\XPMenu_BCB6;D:\Program Files\Borland\ThirdParty\ColorControls10
+Item6=$(BCB)\quickrpt;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Borland\ThirdParty\XPMenu 3.1\XPMenu_BCB6;D:\Program Files\Borland\ThirdParty\ColorControls10
+Item7=..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Borland\ThirdParty\XPMenu 3.1\XPMenu_BCB6;D:\Program Files\Borland\ThirdParty\ColorControls10
+Item8=..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Borland\ThirdParty\XPMenu 3.1\XPMenu_BCB6;D:\Program Files\Borland\ThirdParty\ColorControls10
+Item9=$(BCB)\Lib\XPMenu_BCB6;$(BCB)\lib\fbarcode;..\..\..\..\delphi7\lib\color controls v 1.0;$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\color controls v 1.0;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl
+Item10=$(BCB)\lib\fbarcode;..\..\..\..\delphi7\lib\color controls v 1.0;$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\color controls v 1.0;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl
+Item11=..\..\..\..\delphi7\lib\color controls v 1.0;$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\color controls v 1.0;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl
+Item12=$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\color controls v 1.0;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl
+Item13=d:\program files\borland\color controls v 1.0;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl
+Item14=..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=14
+Item0=..\..;estsoft\p2;..\JpCommon;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\..;estsoft\p2;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\JpCommon;D:\PROGRA~1\Borland\Lib\JVCL33~1\jcl\lib\c6;D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item4=D:\PROGRA~1\Borland\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;D:\Program Files\Borland\CBuilder6\Projects\temp;d:\program files\borland\thirdparty\tinydew4;D:\PROGRA~1\Borland\THIRDP~1\JVCL33~1\jcl\lib\c6;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;d:\program files\borland\colorControls10
+Item5=D:\PROGRA~1\Borland\THIRDP~1\JVCL33~1\jcl\lib\c6;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;d:\program files\borland\colorControls10
+Item6=D:\PROGRA~1\Borland\THIRDP~1\JVCL33~1\jcl\lib\c6;$(BCB)\Lib\XPMenu_BCB6;$(BCB)\lib\fbarcode;..\..\..\..\delphi7\lib\color controls v 1.0;$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\colorControls10;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item7=D:\PROGRA~1\Borland\THIRDP~1\JVCL33~1\jcl\lib\c6;$(BCB)\Lib\XPMenu_BCB6;$(BCB)\lib\fbarcode;..\..\..\..\delphi7\lib\color controls v 1.0;$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\colorControls10;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item8=$(BCB)\Lib\XPMenu_BCB6;$(BCB)\lib\fbarcode;..\..\..\..\delphi7\lib\color controls v 1.0;$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\color controls v 1.0;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item9=$(BCB)\lib\fbarcode;..\..\..\..\delphi7\lib\colorControls10;$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\color controls v 1.0;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item10=..\..\..\..\delphi7\lib\colorControls10;$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\color controls v 1.0;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item11=$(BCB)\Lib\Flatstyle\Source;d:\program files\borland\colorControls10;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item12=d:\program files\borland\colorControls10;..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item13=..\JpCommon;D:\Program Files\Borland\CBuilder6\Projects;F:\Storage\Projects\JpProject\JpClientA;$(BCB)\Lib\JVCL33~1\jcl\lib\c6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=3
+Item0=$(BCB)\source\vcl;D:\Program Files\Borland\CBuilder6\Lib\FlatStyle\Source\;D:\Program Files\Borland\ThirdParty\XPMenu 3.1\XPMenu_BCB6\
+Item1=$(BCB)\source\vcl;D:\Program Files\Borland\CBuilder6\Lib\FlatStyle\Source\
+Item2=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=UNICODE
+Item1=UNICODE;_DEBUG
+Item2=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=..\obj
+
+[HistoryLists\hlFinalOutputDir]
+Count=3
+Item0=..\
+Item1=..\bin\
+Item2=..\bin
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl;D:\Program Files\Borland\CBuilder6\Lib\FlatStyle\Source\;D:\Program Files\Borland\ThirdParty\XPMenu 3.1\XPMenu_BCB6\
+
+[Parameters]
+RunParams=&quot;input.txt&quot; &quot;output.txt&quot;
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
